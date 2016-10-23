@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Laravel - This is now using git!!
                 </div>
 
                 <div class="links">

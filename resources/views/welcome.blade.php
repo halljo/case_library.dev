@@ -80,6 +80,7 @@
             <div class="content">
                 <div class="title m-b-md">
                     Laravel - This is now using git!!
+                    This is a tester
                 </div>
 
                 <div class="links">

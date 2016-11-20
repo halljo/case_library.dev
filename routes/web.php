@@ -11,12 +11,16 @@
 |
 */
 
-Route::get('/', 'PagesController@home');
-
-Route::get('about', 'PagesController@about');
+Route::get('/', function () {
+    return view('welcome');
+});
 
 Auth::routes();
 
+<<<<<<< HEAD
 Route::get('home', 'HomeController@index');
 
 route::get('cases', 'CasesController@index');
+=======
+Route::get('/home', 'HomeController@index');
+>>>>>>> parent of f8841b4... layout changes dropdown broken

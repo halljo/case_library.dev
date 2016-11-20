@@ -18,3 +18,6 @@ Route::get('about', 'PagesController@about');
 Auth::routes();
 
 Route::get('home', 'HomeController@index');
+
+Route::get('cards', 'CardsController@index');
+Route::get('cards/{card}', 'CardsController@show');

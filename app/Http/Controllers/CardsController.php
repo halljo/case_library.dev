@@ -11,6 +11,7 @@ use App\Http\Requests;
 class CardsController extends Controller
 {
 	public function index()
+	
 	{
 	
 		$cards = Card::all();
@@ -20,9 +21,10 @@ class CardsController extends Controller
 	}
 
 	public function show(Card $card)
+	
 	{
 
-		return view('cards.show', compact('card'));
+		return view ('cards.show', compact('card'));
 	
 	}
 

@@ -7,10 +7,10 @@
 	@foreach ($hospitals as $hospital)
 	
 		<div>
-			{{ $hospital->hospital_name }} 
+			<a href="/hospitals/{{ $hospital->id }}"> {{ $hospital->hospital_name }} </a>
 	
 			<p>{{$hospital}}</p>
-			
+
 		</div>
 	@endforeach
 

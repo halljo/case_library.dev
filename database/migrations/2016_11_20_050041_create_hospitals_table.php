@@ -15,10 +15,10 @@ class CreateHospitalsTable extends Migration
     {
         Schema::create('hospitals', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('hospital_id')->unsigned()->index();
-            $table->integer('user_id')->unsigned()->index();
-            $table->integer('case_id')->unsigned()->index();
-            $table->integer('patient_id')->unsigned()->index();
+            // $table->integer('hospital_id')->unsigned()->index();
+            // $table->integer('user_id')->unsigned()->index();
+            // $table->integer('case_id')->unsigned()->index();
+            // $table->integer('patient_id')->unsigned()->index();
             $table->string('hospital_name');
             $table->string('hospital_address_first');
             $table->string('hospital_address_second');

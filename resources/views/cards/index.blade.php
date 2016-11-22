@@ -7,7 +7,7 @@
 	@foreach ($cards as $card)
 
 		<div>
-			{{ $card->case_description }}
+			<a href="/cards/{{ $card->id }}"> {{ $card->case_description }} </a>
 		</div>
 
 	@endforeach

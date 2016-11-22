@@ -16,6 +16,7 @@ class CreateCardsTable extends Migration
         Schema::create('cards', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('case_id')->unsigned()->index();
+            $table->integer('hospital_id')->unsigned()->index();
             $table->integer('user_id')->unsigned()->index();
             $table->string('case_description');
             $table->string('modality');

@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Http\Request;
 
 class Card extends Model
 {
@@ -13,6 +14,14 @@ class Card extends Model
 
     	return $this->belongsTo(Hospital::class);
     	
+    }
+
+    public function user()
+    
+    {
+
+    	return $this->belongsTo(Auth::user());
+
     }
 
     

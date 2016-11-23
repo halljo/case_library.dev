@@ -78,8 +78,31 @@
                     </ul>
             </div>
         </nav>
+        <div class="container">
+        @if (Auth::guest())
+                            <li><a href="{{ url('/login') }}">Login</a></li>
+                            <li><a href="{{ url('/register') }}">Register</a></li>
+                        @else
+                            <li><a class="dropdown-button" href="#" data-activates="dropdown1">
+                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                <i class="material-icons right">arrow_drop_down</i></a>
+                                <ul id="dropdown1" class="dropdown-content">
+                                    <li>
+                                        <a href="{{ url('/logout') }}"
+                                            onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                            Logout
+                                        </a>
 
-        @yield('content')
+                                        <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
+                                            {{ csrf_field() }}
+                                        </form>
+                                    </li>
+                                </ul>
+                            </li>
+                        @endif
+            @yield('content')
+        </div>
         
     <!-- Scripts -->
     <!--Import jQuery before materialize.js-->

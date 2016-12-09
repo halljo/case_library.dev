@@ -20,7 +20,9 @@ Auth::routes();
 Route::get('home', 'HomeController@index');
 
 Route::get('cards', 'CardsController@index');
+Route::get('cards/create', 'CardsController@create');
 Route::get('cards/{card}', 'CardsController@show');
+
 
 Route::get('hospitals', 'HospitalsController@index');
 Route::get('hospitals/{hospital}', 'HospitalsController@show');

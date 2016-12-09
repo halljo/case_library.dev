@@ -22,5 +22,10 @@ class CardsController extends Controller
 	{
 		return view ('cards.show', compact('card'));
 	}
+
+	public function create()
+	{
+		return view ('cards.create');
+	}
 }
 

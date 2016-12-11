@@ -17,5 +17,10 @@
             <h2 class="header">Welcome to Your Case Library</h2>
         </div>
 
+        <div class="container">
+	        <h3><a href="/hospitals">Hospitals</a></h3>
+	        <h3><a href="/cards">Cases</a></h3>
+        </div>
+
 @endsection
 

@@ -118,7 +118,9 @@
         Materialize.updateTextFields();
         $('.datepicker').pickadate({
             selectMonths: true, // Creates a dropdown to control month
-            selectYears: 15 // Creates a dropdown of 15 years to control year
+            selectYears: 15, // Creates a dropdown of 15 years to control year
+            formatSubmit: 'yyyy-mm-dd', // Ensures that the output format is correct for saving to the database
+            hiddenName: true // Hides it from the user
         });
     });
     </script>

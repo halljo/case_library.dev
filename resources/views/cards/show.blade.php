@@ -25,13 +25,18 @@
 		</div>
 		<div class="divider"></div>
 		<div class="section">
+			<h5>Case Modality </h5>
+			<p>{{ $card->modality }}</p>
+		</div>
+		<div class="divider"></div>
+		<div class="section">
 			<h5>Case Notes </h5>
 			<p>{{ $card->case_notes}}</p>
 		</div>
 		<div class="divider"></div>
 		<div class="section">
 			<h5>Teaching Points </h5>
-			<p>{{ $card->teaching_points }}</p>
+			<p>{{ $card->teaching_point }}</p>
 		</div>
 	</div>
 

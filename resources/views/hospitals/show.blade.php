@@ -29,11 +29,9 @@
 			@endforeach
 		</tbody>
 	</table>
-
-	<ul>
-
-
-
-	</ul>
-
+	<br>
+	<a class="btn-floating btn-large waves-effect waves-light red" href="/cards/{{ $hospital->id }}/create"><i class="material-icons">add</i></a>
+	{{var_dump($hospital)}}
 @endsection
+
+<!-- /{{ $hospital->hospital_id }} -->
